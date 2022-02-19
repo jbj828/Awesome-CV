@@ -9,7 +9,7 @@ CV_SRCS = $(shell find $(CV_DIR) -name '*.tex')
 
 examples: $(foreach x, coverletter cv resume, $x.pdf)
 
-resume.pdf: $(EXAMPLES_DIR)/resume.tex $(RESUME_SRCS)
+resume_chung.pdf: $(EXAMPLES_DIR)/resume_chung.tex $(RESUME_SRCS)
 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
 
 cv.pdf: $(EXAMPLES_DIR)/cv.tex $(CV_SRCS)
